@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>frugal-dita-editor</title>
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" />
+</head>
+<body style="background: white;">
+    <h1>Hello study-electron!</h1>
+    <p>
+        We are using Node.js <span id="node-version"></span>,
+        Chromium <span id="chrome-version"></span>,
+        and Electron <span id="electron-version"></span>.
+    </p>
+    <div id="editor">
+<p>このサンプルは、electron の必須構成である以下のファイル：
+  <ul>
+    <li>main.js：Node.js上で動作する、バックエンドの JavaScriptプログラム</li>
+    <li>preload.js：Node.jsとウェブページ間のブリッジ機能</li>
+    <li>index.html：Electron の初期画面として表示されるコンテンツ</li>
+  </ul>
+のうち、index.html に、CKEditor5のJavaScriptを取り込んだだけのものです。<br/>
+これだけでも、なんとなくエディタっぽい動きが出来てしまうところが、すごいと思いました。<br/>
+なお、単純にそれだけのことしかしていないので、お恥ずかしながら、編集結果の保存機能は未実装です。</p>
+<p>以下、編集可能なテキストコンテンツです。</p>
+<p>いろいろと編集操作を試してみてください。</p>
+
+<p>箇条書き</p>
+<ul>
+  <li>箇条書き１</li>
+  <li>箇条書き２</li>
+  <li>箇条書き３</li>
+</ul>
+<p>番号付き箇条書き</p>
+<ol>
+  <li>番号付き箇条書き１</li>
+  <li>番号付き箇条書き２</li>
+  <li>番号付き箇条書き３</li>
+</ol>
+<p>サンプル：<strong>強調</strong>の後、<i>斜体（イタリック）</i></p>
+<p>などなど、適当に...</p>
+    </div>
+    <script src="dist/bundle.js"></script>
+    <script>
+
+    </script>
+</body>
+</html>
